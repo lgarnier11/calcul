@@ -35,4 +35,8 @@ class Test {
 	void test5() {
 		assertThrows(ArithmeticException.class,() -> new Calcul().run(123456789));
 	}
+	@org.junit.jupiter.api.Test
+	void test6() {
+		assertEquals(200, new Calcul().run(91));
+	}
 }
